@@ -1,0 +1,21 @@
+metadata:
+  id: dockersamples/my-first-labspace # Should be the name of the published OCI artifact
+  sourceRepo: github.com/dockersamples/my-first-labspace
+  contentVersion: abcd123 # Usually the short commit sha
+
+title: Labspace title
+description: |
+  The description of the Labspace, generally in 100 characters or less
+
+sections:
+  - title: Section One
+    contentPath: section-one.md
+  - title: Section Two
+    contentPath: section-two.md
+
+# Define Labspace-provided services that should appear as tabs
+services:
+  - id: marlin
+    url: http://localhost:3000
+    title: Marlin
+    icon: anchor
